@@ -14,17 +14,21 @@ var fibonacciGenerator = function() {
   };
 };
 
+var isEven = function(number) {
+  return number % 2 === 0;
+};
+
 var fibonacciEvenSum = function(limit) {
   var fib = fibonacciGenerator();
   var value = 0;
   var evenSum = 0;
 
   do {
-    if (value % 2 === 0) {
+    if (isEven(value)) {
       evenSum += value;
     }
 
-    var value = fib();
+    value = fib();
 
   } while (value < limit);
 
