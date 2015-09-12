@@ -24,7 +24,7 @@ describe('euler-01', function() {
     expect(calc35Sum(10)).toBe(23);
   });
 
-  it('should return 23 for limit 10', function() {
+  it('should return 233168 for limit 1000', function() {
     var result = calc35Sum(1000);
     expect(typeof result).toBe('number');
 

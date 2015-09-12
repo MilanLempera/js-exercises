@@ -1,10 +1,8 @@
 module.exports = function(config) {
-
   config.set({
-    basePath: '',
+    basePath: '../..',
     files: [
-      'node_modules/polyfill-function-prototype-bind/bind.js',
-      'src/**/*.js'
+      'node_modules/polyfill-function-prototype-bind/bind.js'
     ],
     frameworks: ['jasmine'],
     browsers: ['PhantomJS'],
@@ -30,3 +28,6 @@ module.exports = function(config) {
 
   });
 };
+
+
+module.exports.rootPath = __dirname;
