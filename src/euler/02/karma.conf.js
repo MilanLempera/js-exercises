@@ -10,6 +10,7 @@ module.exports = function(config) {
     basePath: path.relative('.', rootPath)
   });
 
+  config.files.push('node_modules/rx/dist/rx.all.js');
   config.files.push(path.relative(rootPath, '.') + '/**/*.js');
 
 };
