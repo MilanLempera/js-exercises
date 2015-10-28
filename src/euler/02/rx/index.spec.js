@@ -4,31 +4,34 @@ describe('euler-02-rx', function() {
     expect(Rx).toBeDefined();
   });
 
-  it('should be function', function() {
-    expect(fibonacciEvenSumRx).toBeDefined();
-    expect(typeof fibonacciEvenSumRx).toBe("function");
-  });
+  describe('with generate', function() {
 
-  it('should return 44 for number little that 10', function(done) {
-    fibonacciEvenSumRx(90)
-        .subscribe(function(value) {
-          expect(value).toBe(44);
-        },
-        done.fail.bind(done, "error function called"),
-        done
-    );
+    it('should be function', function() {
+      expect(fibonacciEvenSumRx).toBeDefined();
+      expect(typeof fibonacciEvenSumRx).toBe("function");
+    });
 
-  });
+    it('should return 44 for number little that 10', function(done) {
+      fibonacciEvenSumRx(90)
+          .subscribe(function(value) {
+            expect(value).toBe(44);
+          },
+          done.fail.bind(done, "error function called"),
+          done
+      );
 
-  it('should return 4613732 for number little that 4000000', function(done) {
+    });
 
-    fibonacciEvenSumRx(4000000)
-        .subscribe(function(value) {
-          expect(value).toBe(4613732);
-        },
-        done.fail.bind(done, "error function called"),
-        done
-    );
+    it('should return 4613732 for number little that 4000000', function(done) {
+
+      fibonacciEvenSumRx(4000000)
+          .subscribe(function(value) {
+            expect(value).toBe(4613732);
+          },
+          done.fail.bind(done, "error function called"),
+          done
+      );
+    });
   });
 
   describe("fibonacci generator function", function() {
