@@ -9,6 +9,7 @@
   "author": "Milan Lempera <milanlempera@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "chai": "^3.4.1",
     "jasmine-core": "^2.3.4",
     "karma": "^0.12.36",
     "karma-coverage": "^0.4.2",

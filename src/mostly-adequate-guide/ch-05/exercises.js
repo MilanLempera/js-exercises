@@ -1,7 +1,7 @@
 var _ = require('ramda');
 var accounting = require('accounting');
 
-require('../support');
+require('../part1-support');
 
 // Example Data
 var CARS = [

@@ -1,6 +1,6 @@
 var _ = require('ramda');
 
-require('../support.js');
+require('../part1-support.js');
 
 // Exercise 1
 //==============
