@@ -1,8 +1,7 @@
 {
   "name": "js-exercises",
-  "description": "my small exercieses",
-  "version": "1.0.0",
   "description": "",
+  "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
     "test": "karma start test/karma.conf.js"
@@ -18,5 +17,10 @@
     "karma-phantomjs-launcher": "^0.2.0",
     "phantomjs": "^1.9.17",
     "polyfill-function-prototype-bind": "0.0.1"
+  },
+  "dependencies": {
+    "accounting": "^0.4.1",
+    "data.task": "^3.0.0",
+    "ramda": "^0.18.0"
   }
 }
